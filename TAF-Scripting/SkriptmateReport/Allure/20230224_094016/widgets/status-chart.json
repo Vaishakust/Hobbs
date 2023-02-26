@@ -1,0 +1,21 @@
+[ {
+  "uid" : "8c5643c73f6b2ee4",
+  "name" : "Savmart_scenario",
+  "time" : {
+    "start" : 1677211786753,
+    "stop" : 1677211797071,
+    "duration" : 10318
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a2f0f99ef78d48c",
+  "name" : "Runs Cucumber Scenarios",
+  "time" : {
+    "start" : 1677211785576,
+    "stop" : 1677211797243,
+    "duration" : 11667
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

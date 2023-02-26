@@ -1,0 +1,39 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "com.scripted.runners.SaveMartRunner",
+    "children" : [ {
+      "name" : "runScenario",
+      "uid" : "5a2f0f99ef78d48c",
+      "parentUid" : "7817ca3dab53acb89edce50440a2404e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1677211785576,
+        "stop" : 1677211797243,
+        "duration" : 11667
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "\"Savmart_scenario\"", "\"SavemartTestCases\"" ]
+    } ],
+    "uid" : "com.scripted.runners.SaveMartRunner"
+  }, {
+    "name" : "Features.selfhealing.SavemartTestCases",
+    "children" : [ {
+      "name" : "Savmart_scenario",
+      "uid" : "8c5643c73f6b2ee4",
+      "parentUid" : "f03c2a06202cc76f2e85b33c5a0653d1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1677211786753,
+        "stop" : 1677211797071,
+        "duration" : 10318
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "Features.selfhealing.SavemartTestCases"
+  } ]
+}
