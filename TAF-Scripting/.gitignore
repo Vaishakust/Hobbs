@@ -1,0 +1,8 @@
+target
+.settings
+.project
+.idea
+.iml
+.classpath
+SkriptmateLogs
+SkriptmateLogs/Skriptmate.log
