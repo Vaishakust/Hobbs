@@ -72,11 +72,11 @@ public class NewPage {
 
 	public void select_product() throws InterruptedException {
 		Thread.sleep(2000);
-		WebHandlers.click(acceptcookies);
+		WebHandlers.clickByJsExecutor(acceptcookies);
 		Thread.sleep(3000);
-		WebHandlers.click(span_mSNewIn);
+		WebHandlers.clickByJsExecutor(span_mSNewIn);
 		Thread.sleep(3000);
-		WebHandlers.click(a_RNNewInCoatsJac);
+		WebHandlers.clickByJsExecutor(a_RNNewInCoatsJac);
 		Thread.sleep(8000);
 		JavascriptExecutor yu = (JavascriptExecutor) driver;
 		yu.executeScript("arguments[0].scrollIntoView(true);", selectFirstProduct);
