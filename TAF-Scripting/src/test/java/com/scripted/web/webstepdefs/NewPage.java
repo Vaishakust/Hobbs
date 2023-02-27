@@ -46,7 +46,7 @@ public class NewPage {
 	private WebElement button_nLAddtoBag;
 	@FindBy(xpath = "//a[normalize-space()='View Bag & Checkout']")
 	private WebElement a_BRViewBagChecko;
-	@FindBy(xpath = "//div[@class='container-fluid porceleinBg py-6 allSale d-none d-md-block']//a[@class='blackLink saleLink mr-4'][normalize-space()='New In Coats & Jackets1234']")
+	@FindBy(xpath = "//div[@class='container-fluid porceleinBg py-6 allSale d-none d-md-block']//a[@class='blackLink saleLink mr-4'][normalize-space()='New In Coats & Jackets']")
 	private WebElement a_RNNewInCoatsJac;
 	@FindBy(xpath = "//div[@class='checkout-and-applepay']//a[@role='button'][normalize-space()='Checkout Securely']")
 	private WebElement a_NHCheckoutSecur;
@@ -67,7 +67,7 @@ public class NewPage {
 	private WebElement email;
 	@FindBy(id = "//a[contains(text(),'Checkout as guest')]")
 	private WebElement Checkout_as_guest;
-	@FindBy(xpath = "//div[@class='checkout-and-applepay']//a[@role='button'][normalize-space()='Checkout Securely123']")
+	@FindBy(xpath = "//div[@class='checkout-and-applepay']//a[@role='button'][normalize-space()='Checkout Securely']")
 	private WebElement CheckoutSecur;
 	
 	
