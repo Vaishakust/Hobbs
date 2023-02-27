@@ -67,6 +67,8 @@ public class NewPage {
 	private WebElement email;
 	@FindBy(id = "//a[contains(text(),'Checkout as guest')]")
 	private WebElement Checkout_as_guest;
+	@FindBy(xpath = "//div[@class='checkout-and-applepay']//a[@role='button'][normalize-space()='Checkout Securely123']")
+	private WebElement CheckoutSecur;
 	
 	
 
@@ -95,7 +97,7 @@ public class NewPage {
 		Thread.sleep(5000);
 		WebHandlers.scrollBy(0, 250);
 		Thread.sleep(1000);
-		WebHandlers.clickByJsExecutor(a_NHCheckoutSecur);
+		WebHandlers.clickByJsExecutor(CheckoutSecur);
 		
 	}
 
