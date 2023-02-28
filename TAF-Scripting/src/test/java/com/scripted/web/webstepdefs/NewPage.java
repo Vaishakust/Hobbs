@@ -21,6 +21,7 @@ public class NewPage {
 
 	@FindBy(id = "store-search-input")
 	private WebElement input_q;
+	
 	@FindBy(xpath = "//*[@id=\"store-details-pane\"]/div/button")
 	private WebElement setasmyStore;
 	@FindBy(xpath = "//div[@objectspyxpath='objectspy']")
