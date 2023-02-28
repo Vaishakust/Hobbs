@@ -40,7 +40,7 @@ public class NewPage {
 
 	/////////// Hobbs.com//////////////////////////////////
 
-	@FindBy(xpath = "//span[normalize-space()='New In12345']")
+	@FindBy(xpath = "//span[normalize-space()='New In12']")
 	private WebElement span_mSNewIn;
 	@FindBy(xpath = "//button[contains(text(),'Add to Bag')]")
 	private WebElement button_nLAddtoBag;
