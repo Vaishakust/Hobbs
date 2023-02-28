@@ -73,57 +73,44 @@ public class NewPage {
 	
 
 	public void select_product() throws InterruptedException {
-		Thread.sleep(2000);
+		waitforsec(2000);
 		WebHandlers.clickByJsExecutor(acceptcookies);
-		Thread.sleep(3000);
+		waitforsec(3000);
 		WebHandlers.clickByJsExecutor(span_mSNewIn);
-		Thread.sleep(3000);
+		waitforsec(3000);
 		WebHandlers.clickByJsExecutor(a_RNNewInCoatsJac);
-		Thread.sleep(8000);
+		waitforsec(8000);
 		JavascriptExecutor yu = (JavascriptExecutor) driver;
 		yu.executeScript("arguments[0].scrollIntoView(true);", selectFirstProduct);
 		WebHandlers.clickByJsExecutor(selectFirstProduct);	
-		Thread.sleep(5000);
+		waitforsec(5000);
 		WebHandlers.scrollBy(0, 250);
 		WebHandlers.clickByJsExecutor(selectSize);
 	}
 	
 	public void add_producttotheCart() throws InterruptedException {
 		JavascriptExecutor yu = (JavascriptExecutor) driver;
-		Thread.sleep(5000);
+		waitforsec(5000);
 		WebHandlers.clickByJsExecutor(button_nLAddtoBag);
-		Thread.sleep(5000);
+		waitforsec(5000);
 		WebHandlers.clickByJsExecutor(minicartqty);
-		Thread.sleep(5000);
+		waitforsec(5000);
 		WebHandlers.scrollBy(0, 250);
-		Thread.sleep(1000);
+		waitforsec(1000);
 		WebHandlers.clickByJsExecutor(CheckoutSecur);
 		
 	}
 
 	public void forpayment() throws InterruptedException {
-		Thread.sleep(5000);
+		waitforsec(5000);
 		WebHandlers.click(continueSecurely);
-		Thread.sleep(5000);
+		waitforsec(5000);
 		WebHandlers.enterText(email, "test@test.com");
-		Thread.sleep(5000);
+		waitforsec(5000);
 		WebHandlers.click(Checkout_as_guest);
-		Thread.sleep(3000);
+		waitforsec(3000);
 	}
 	
-	public void select_store() throws InterruptedException {
-		Thread.sleep(5000);
-		WebWaitHelper.waitForElement(input_q);
-		WebHandlers.click(input_q);
-		Thread.sleep(5000);
-		WebHandlers.enterText(input_q, "GEER GARDENS");
-		Thread.sleep(3000);
-		Actions tr = new Actions(BrowserDriver.getDriver());
-		tr.sendKeys(Keys.DOWN, Keys.ENTER).build().perform();
-		Thread.sleep(7000);
-		WebHandlers.click(setasmyStore);
-		Thread.sleep(4000);
-	}
 
 	public void select_shop() throws InterruptedException {
 
@@ -136,5 +123,9 @@ public class NewPage {
 		WebHandlers.scrollBy(0, 400);
 		WebHandlers.clickByJsExecutor(span_SelectOptions);
 
+	}
+	
+	public void waitforsec(long hours) throws InterruptedException {
+		Thread.sleep(hours);
 	}
 }

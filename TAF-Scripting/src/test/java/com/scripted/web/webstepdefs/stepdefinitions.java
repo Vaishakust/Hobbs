@@ -172,7 +172,7 @@ WebDriver driver;
 	
 	@Then("user add the product to the cart")
 	public void navigate() throws Throwable {
-		Thread.sleep(5000);
+		
 		newPage = PageFactory.initElements(BrowserDriver.getDriver(), NewPage.class);
 		newPage.add_producttotheCart();
 		BrowserDriver.getDriver().close();
