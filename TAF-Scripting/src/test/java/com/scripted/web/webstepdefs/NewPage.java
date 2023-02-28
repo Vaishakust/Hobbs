@@ -40,7 +40,7 @@ public class NewPage {
 
 	/////////// Hobbs.com//////////////////////////////////
 
-	@FindBy(xpath = "//span[normalize-space()='New In12']")
+	@FindBy(xpath = "//span[normalize-space()='New In']")
 	private WebElement span_mSNewIn;
 	@FindBy(xpath = "//div[@class='container-fluid porceleinBg py-6 allSale d-none d-md-block']//a[@class='blackLink saleLink mr-4'][normalize-space()='New In Coats & Jackets']")
 	private WebElement a_RNNewInCoatsJac;
