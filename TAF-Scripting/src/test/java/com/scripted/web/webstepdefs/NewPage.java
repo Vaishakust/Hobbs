@@ -67,7 +67,7 @@ public class NewPage {
 	private WebElement email;
 	@FindBy(id = "//a[contains(text(),'Checkout as guest')]")
 	private WebElement Checkout_as_guest;
-	@FindBy(xpath = "//div[@class='checkout-and-applepay']//a[@role='button'][normalize-space()='Checkout Securely']123")
+	@FindBy(xpath = "//div[@class='checkout-and-applepay']//a[@role='button'][normalize-space()='Checkout Securely']")
 	private WebElement CheckoutSecur;
 	
 	
