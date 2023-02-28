@@ -42,17 +42,15 @@ public class NewPage {
 
 	@FindBy(xpath = "//span[normalize-space()='New In12']")
 	private WebElement span_mSNewIn;
+	@FindBy(xpath = "//div[@class='container-fluid porceleinBg py-6 allSale d-none d-md-block']//a[@class='blackLink saleLink mr-4'][normalize-space()='New In Coats & Jackets']")
+	private WebElement a_RNNewInCoatsJac;
+	
 	@FindBy(xpath = "//button[contains(text(),'Add to Bag')]")
 	private WebElement button_nLAddtoBag;
 	@FindBy(xpath = "//a[normalize-space()='View Bag & Checkout']")
 	private WebElement a_BRViewBagChecko;
-	@FindBy(xpath = "//div[@class='container-fluid porceleinBg py-6 allSale d-none d-md-block']//a[@class='blackLink saleLink mr-4'][normalize-space()='New In Coats & Jackets']")
-	private WebElement a_RNNewInCoatsJac;
 	@FindBy(xpath = "//div[@class='checkout-and-applepay']//a[@role='button'][normalize-space()='Checkout Securely']")
-	private WebElement a_NHCheckoutSecur;
-
-	
-	
+	private WebElement a_NHCheckoutSecur;	
 	@FindBy(id = "onetrust-accept-btn-handler")
 	private WebElement acceptcookies;
 	@FindBy(xpath = "//*[@id='product-search-results']/div[2]/div[3]/div/div[2]/div[1]/div/div/div[2]/div[2]/div/a")
